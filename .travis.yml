@@ -1,0 +1,11 @@
+dist: trusty
+
+jobs:
+  include:
+    - stage: build
+      script:
+      - git clone https://github.com/hari-karthig/hello-docker.git 
+      - cd hello-docker
+      - docker build -t harikarthi/hello-docker:latest .
+      - docker images
+
