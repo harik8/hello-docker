@@ -5,9 +5,9 @@ Images are available in dockerhub.
 
 Docker usage
 
-```docker pull harikarthi/hello-docker```
+```docker pull hariyaa/hello-docker```
 
 Kubernetes usage
 
-```kubectl run hello-docker --image=harikarthi/hello-docker --restart=Never```
+```kubectl run hello-docker --image=hariyaa/hello-docker --restart=Never```
 
