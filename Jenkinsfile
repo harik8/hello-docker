@@ -2,7 +2,7 @@
 
 String image    = env.JOB_NAME.split('/')[1]
 String registry = "harik8/$image"
-String tag      = "${env.VERSION ?: "latest"}"
+String tag      = "latest"
 
 pipeline {
     agent {
@@ -53,21 +53,6 @@ pipeline {
                         """
                 }
             }
-        }
-
-        stage("release") {
-            when {
-                branch 'master'
-            }
-            steps {
-                container(name: 'kaniko', shell: '/busybox/sh') {
-                     withEnv(['PATH+EXTRA=/busybox:/kaniko']) {
-                      sh """#!/busybox/sh
-                        /kaniko/executor --context=$WORKSPACE --destination $registry:$VERSION
-                      """
-                    }
-                }
-            }    
         }
     }
 }
