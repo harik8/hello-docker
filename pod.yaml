@@ -38,8 +38,8 @@ spec:
         memory: 512Mi
     tty: true
     volumeMounts:
-      - name: docker-config
-        mountPath: /kaniko/.docker/
+    - name: docker-config
+      mountPath: /kaniko/.docker/
   - name: klar
     image: harik8/klar:latest
     command:
