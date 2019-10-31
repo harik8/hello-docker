@@ -54,20 +54,5 @@ pipeline {
                 }
             }
         }
-
-        stage("release") {
-            when {
-                branch 'master'
-            }
-            steps {
-                container(name: 'kaniko', shell: '/busybox/sh') {
-                     withEnv(['PATH+EXTRA=/busybox:/kaniko']) {
-                      sh """#!/busybox/sh
-                        /kaniko/executor --context=$WORKSPACE --destination $registry:$VERSION
-                      """
-                    }
-                }
-            }    
-        }
     }
 }
