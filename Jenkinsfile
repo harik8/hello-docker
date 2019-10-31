@@ -2,7 +2,7 @@
 
 String image    = env.JOB_NAME.split('/')[1]
 String registry = "harik8/$image"
-String tag      = "${env.VERSION ?: "latest"}"
+String tag      = "latest"
 
 pipeline {
     agent {
