@@ -14,7 +14,7 @@ spec:
         cpu: 100m
         memory: 256Mi
   - name: lint
-    image: harik8/hadolint:latest
+    image: harik8/hadolint:v1.0.0
     command:
     - cat
     resources:
@@ -41,7 +41,7 @@ spec:
     - name: docker-config
       mountPath: /kaniko/.docker/
   - name: klar
-    image: harik8/klar:latest
+    image: harik8/klar:v1.0.0
     command:
     - cat
     resources:
