@@ -1,5 +1,12 @@
 pipeline {
-  agent any
+  agent {
+    kubernetes {
+      	cloud 'kubernetes'
+      	label 'default'
+      	defaultContainer 'jnlp'
+#      	yamlFile 'pod.yaml'
+      }
+    }
   stages {
     stage('Deploy App') {
       steps {
