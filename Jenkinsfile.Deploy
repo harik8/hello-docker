@@ -4,7 +4,6 @@ pipeline {
       	cloud 'kubernetes'
       	label 'default'
       	defaultContainer 'jnlp'
-#      	yamlFile 'pod.yaml'
       }
     }
   stages {
