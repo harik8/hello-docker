@@ -1,6 +1,7 @@
-on: push
-paths:
-- 'Dockerfile'
+name: Build Hello Docker
+on: 
+  push:
+    paths: 'Dockerfile'
 jobs:
   build:
     name: Build Docker Image
