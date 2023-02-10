@@ -1,4 +1,6 @@
 on: push
+paths:
+- 'Dockerfile'
 jobs:
   build:
     name: Build Docker Image
