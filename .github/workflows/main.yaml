@@ -14,4 +14,7 @@ permissions:
 
 jobs:
   INIT:
-    uses: harik8/sandbox/.github/workflows/rw-init.yaml@main
+    uses: harik8/sandbox/.github/workflows/rw-ci.yaml@main
+    with:
+      paths_modified: []
+      tag_latest: true
