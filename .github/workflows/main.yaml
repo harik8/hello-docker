@@ -16,7 +16,7 @@ jobs:
   INIT:
     uses: harik8/sandbox/.github/workflows/rw-ci.yaml@D-051225-3
     with:
-      paths_modified: 'hello-docker'
+      paths_modified: hello-docker
       tag_latest: true
     secrets:
       DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
