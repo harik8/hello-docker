@@ -14,4 +14,4 @@ permissions:
 
 jobs:
   INIT:
-    uses: harik8/sandbox/.github/workflows/init.yaml@main
+    uses: harik8/sandbox/.github/workflows/rw-init.yaml@main
