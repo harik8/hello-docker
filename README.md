@@ -4,13 +4,13 @@
 
 <p align="center">
   <a href="https://github.com/harik8/hello-docker/actions/workflows/main.yaml">
-    <img src="https://github.com/harik8/hello-docker/actions/workflows/main.yaml/badge.svg?branch=D-051225" alt="CI" />
+    <img src="https://github.com/harik8/hello-docker/actions/workflows/main.yaml/badge.svg?branch=master" alt="CI" />
   </a>
   <img src="https://img.shields.io/docker/pulls/harik8/hello-docker" alt="DOCKER PULLS" />
 </p>
 
 The hello-docker is a containerized web app, which serves a simple html page as shown above in the image.
-It's handy for learning and testing purposes.  
+It's useful for learning and testing purposes.  
 
 # Usage
 

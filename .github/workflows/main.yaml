@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   CI:
-    uses: harik8/sandbox/.github/workflows/rw-ci.yaml@D-051225-3
+    uses: harik8/sandbox/.github/workflows/rw-ci.yaml@main
     with:
       paths_modified: '["hello-docker"]'
       tag_latest: true
