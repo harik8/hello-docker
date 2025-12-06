@@ -1,0 +1,59 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kaniko
+spec:
+  containers:
+  - name: jnlp
+    image: jenkins/jnlp-slave:3.27-1-alpine
+    resources:
+      limits:
+        cpu: 100m
+        memory: 512Mi
+      requests:
+        cpu: 100m
+        memory: 256Mi
+  - name: lint
+    image: harik8/hadolint:v1.0.0
+    command:
+    - cat
+    resources:
+      limits:
+        cpu: 100m
+        memory: 256Mi
+      requests:
+        cpu: 100m
+        memory: 128Mi
+    tty: true
+  - name: kaniko
+    image: gcr.io/kaniko-project/executor:debug-v0.10.0
+    command:
+    - /busybox/cat
+    resources:
+      limits:
+        cpu: 100m
+        memory: 1Gi
+      requests:
+        cpu: 100m
+        memory: 512Mi
+    tty: true
+    volumeMounts:
+    - name: docker-config
+      mountPath: /kaniko/.docker/
+  - name: klar
+    image: harik8/klar:v1.0.0
+    command:
+    - cat
+    resources:
+      limits:
+        cpu: 100m
+        memory: 256Mi
+      requests:
+        cpu: 100m
+        memory: 128Mi
+    tty: true
+  volumes:
+    - name: docker-config
+      configMap:
+        name: docker-config
+  restartPolicy: Never
