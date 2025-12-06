@@ -1,5 +1,6 @@
 <p align="center">
   <img src="./asserts/hello-docker.png" width="200" />
+  [![CICD](https://github.com/harik8/hello-docker/actions/workflows/main.yaml/badge.svg?branch=D-051225)](https://github.com/harik8/hello-docker/actions/workflows/main.yaml)![DOCKER PULLS](https://img.shields.io/docker/pulls/harik8/hello-docker)
 </p>
 
 [![CICD](https://github.com/harik8/hello-docker/actions/workflows/main.yaml/badge.svg?branch=D-051225)](https://github.com/harik8/hello-docker/actions/workflows/main.yaml)![DOCKER PULLS](https://img.shields.io/docker/pulls/harik8/hello-docker)
