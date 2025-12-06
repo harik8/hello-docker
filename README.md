@@ -4,21 +4,20 @@
 
 <p align="center">
   <a href="https://github.com/harik8/hello-docker/actions/workflows/main.yaml">
-    <img src="https://github.com/harik8/hello-docker/actions/workflows/main.yaml/badge.svg?branch=D-051225" alt="CICD" />
+    <img src="https://github.com/harik8/hello-docker/actions/workflows/main.yaml/badge.svg?branch=D-051225" alt="CI" />
   </a>
   <img src="https://img.shields.io/docker/pulls/harik8/hello-docker" alt="DOCKER PULLS" />
 </p>
 
-The hello-docker is a containerized web app, which serves a simple html page as shown above.
+The hello-docker is a containerized web app, which serves a simple html page as shown above in the image.
 It's handy for learning and testing purposes.  
 
 # Usage
 
-Docker
+- Docker
 
 ```docker run -p 8080:80 harik8/hello-docker```
 
-Kubernetes
+- Kubernetes
 
 ```kubectl run hello-docker --image=harik8/hello-docker --restart=Never```
-
