@@ -1,6 +1,6 @@
 # hello-docker 
 
-![](images/hello-docker.png)
+![](./asserts/hello-docker.png)
 
 [![CICD](https://github.com/harik8/hello-docker/actions/workflows/main.yaml/badge.svg?branch=D-051225)](https://github.com/harik8/hello-docker/actions/workflows/main.yaml)![DOCKER PULLS](https://img.shields.io/docker/pulls/harik8/hello-docker)
 
