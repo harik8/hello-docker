@@ -13,12 +13,12 @@ permissions:
   contents: read  # This is required for actions/checkout
 
 jobs:
-  INIT:
+  CI:
     uses: harik8/sandbox/.github/workflows/rw-ci.yaml@D-051225-3
     with:
       paths_modified: '["hello-docker"]'
       tag_latest: true
-    secrets:
+    # secrets:
       # DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
       # DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-      inherit: true
+      # inherit: true
