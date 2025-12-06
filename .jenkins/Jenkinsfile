@@ -1,3 +1,4 @@
+
 // hello-docker
 
 String image    = env.JOB_NAME.split('/')[1]

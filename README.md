@@ -1,13 +1,23 @@
-# hello-docker [![Build Status](https://travis-ci.com/harik8/hello-docker.svg?branch=master)](https://travis-ci.com/harik8/hello-docker)
+<p align="center">
+  <img src="./.asserts/hello-docker.png" width="200" />
+</p>
 
-hello-docker is a sample docker app. Which can be used for container tests. It builds a simple html web page on top of nginx.
-Images are available in dockerhub. 
+<p align="center">
+  <a href="https://github.com/harik8/hello-docker/actions/workflows/main.yaml">
+    <img src="https://github.com/harik8/hello-docker/actions/workflows/main.yaml/badge.svg?branch=master" alt="CI" />
+  </a>
+  <img src="https://img.shields.io/docker/pulls/harik8/hello-docker" alt="DOCKER PULLS" />
+</p>
 
-Docker usage
+The hello-docker is a containerized web app, which serves a simple html page as shown above in the image.
+It's useful for learning and testing purposes.  
 
-```docker pull harik8/hello-docker```
+# Usage
 
-Kubernetes usage
+- Docker
+
+```docker run -p 8080:80 harik8/hello-docker```
+
+- Kubernetes
 
 ```kubectl run hello-docker --image=harik8/hello-docker --restart=Never```
-
