@@ -1,7 +1,6 @@
-# hello-docker [![Build Status](https://travis-ci.com/harik8/hello-docker.svg?branch=master)](https://travis-ci.com/harik8/hello-docker)
+# HELLO-DOCKER [![CICD](https://github.com/harik8/hello-docker/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/harik8/hello-docker/actions/workflows/main.yaml)
 
-hello-docker is a sample docker app. Which can be used for container tests. It builds a simple html web page on top of nginx.
-Images are available in dockerhub. 
+The hello-docker is a containerized web app, which serves a simple html page as shown below.  
 
 Docker usage
 
