@@ -19,5 +19,6 @@ jobs:
       paths_modified: '["hello-docker"]'
       tag_latest: true
     secrets:
-      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      # DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      # DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      inherit: true
