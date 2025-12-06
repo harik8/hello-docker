@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./asserts/hello-docker.png" width="200" />
+  <img src="./.asserts/hello-docker.png" width="200" />
 </p>
 
 <p align="center">
