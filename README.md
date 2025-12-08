@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/harik8/hello-docker/actions/workflows/main.yaml">
-    <img src="https://github.com/harik8/hello-docker/actions/workflows/main.yaml/badge.svg?branch=master" alt="CI" />
+    <img src="https://github.com/harik8/hello-docker/actions/workflows/main.yaml/badge.svg?branch=main" alt="CI" />
   </a>
   <img src="https://img.shields.io/docker/pulls/harik8/hello-docker" alt="DOCKER PULLS" />
 </p>
