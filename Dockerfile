@@ -1,4 +1,4 @@
-FROM nginx:1.29.3
+FROM nginx:1.24
 
 RUN echo "Building hello docker..."
 
