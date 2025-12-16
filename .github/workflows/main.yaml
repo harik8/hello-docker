@@ -14,6 +14,6 @@ permissions:
 
 jobs:
   CI:
-    uses: harik8/manalpetti/.github/workflows/rw-ci.yaml@main
+    uses: harik8/manalpetti/.github/workflows/rw-ci.yaml@D-161225-5
     secrets:
       DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
