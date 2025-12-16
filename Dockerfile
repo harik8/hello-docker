@@ -1,5 +1,6 @@
-FROM nginx:1.24
+FROM nginx:1.29
 
-RUN echo "Building hello docker..."
+# ENV VERSION is required to determine the app's version in CI stage
+ENV VERSION=latest
 
 COPY html/ /usr/share/nginx/html/
